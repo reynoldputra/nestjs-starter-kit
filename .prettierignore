@@ -1,0 +1,8 @@
+node_modules
+package.json
+yarn.lock
+.lintstagedrc
+.prettierrc
+tsconfig.json
+dist
+./src/database/schema.prisma

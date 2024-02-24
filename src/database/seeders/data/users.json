@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Testing User",
+    "username": "testinguser",
+    "email": "testuser@mail.com",
+    "password": "password",
+    "user_type": "USER"
+  },
+  {
+    "name": "Testing Admin",
+    "username": "testingadmin",
+    "email": "testadmin@mail.com",
+    "password": "password",
+    "user_type": "ADMIN"
+  }
+]

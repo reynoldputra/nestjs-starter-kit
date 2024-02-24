@@ -1,0 +1,7 @@
+{
+  "src/**":[
+    "yarn format",
+    "yarn build && rimraf dist",
+    "yarn lint"
+  ]
+}
