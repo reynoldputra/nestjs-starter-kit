@@ -1,9 +1,10 @@
 name: Deploy Backend
 on:
     workflow_dispatch:
-    push:
-        branches:
-            - main
+    # push:
+    #     branches:
+    #         - main
+
 jobs:
     build:
         name: Deploy Backend
