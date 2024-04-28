@@ -19,8 +19,12 @@ services:
   app:
     image: node:18-alpine
     restart: always
-    command: sh -c "yarn && yarn start:dev"
+    command: sh -c "yarn && yarn db:generate && yarn start:dev"
     working_dir: /app
+    environment:
+      DATABASE_URL: mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@${DOCKER_MYSQL_HOST}:${DOCKER_MYSQL_PORT}/${MYSQL_DATABASE}
+    env_file:
+      - .env
     ports:
       - ${BACKEND_PORT}:${BACKEND_PORT}
     depends_on:

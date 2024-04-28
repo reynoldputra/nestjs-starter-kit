@@ -19,14 +19,11 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "studio": "npx prisma studio",
     "db:generate": "npx prisma generate",
     "db:push": "npx prisma db push",
     "db:seed": "ts-node --transpile-only ./src/database/seeders/seed.ts",
-    "db:migrate:dev": "npx prisma migrate dev",
-    "db:local:generate": "MYSQL_HOST=localhost npx prisma generate",
-    "db:local:push": "MYSQL_HOST=localhost npx prisma db push",
-    "db:local:seed": "MYSQL_HOST=localhost ts-node --transpile-only ./src/database/seeders/seed.ts",
-    "db:local:migrate:dev": "MYSQL_HOST=localhost npx prisma migrate dev",
+    "db:migrate": "npx prisma migrate",
     "postinstall": "husky install"
   },
   "dependencies": {
